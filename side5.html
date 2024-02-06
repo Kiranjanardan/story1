@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div class="pp">
+    <style>
+      .pp {
+        background-color:cornflowerblue;
+                height: 100vh;
+        width: 100vw;
+
+      }
+    </style>
+    <div class="container" style="text-align: center; margin-top:20px; color:blue;">
+      <button onclick="myFunction()">
+        <h1>MORAL OF THE STORY</h1>
+      </button>
+      <div class="dd" style="display: flex;">
+        <img id="myImg" src="final.jpg" alt="The Pulpit Rock" width="30%" height="10%"
+          style="padding-left: 5%; margin-top: 10%;">
+        <h2 style="padding-left: 6%; color:cornsilk; margin-top: 120px; margin-right:10%; ">The moral of the story is We should not be greedy. Greed is a curse and will make us do things that are not the right choices. Greed makes us selfish, short-tempered, anxious, and also jealous of others. It is foolish to be greedy in life. One must be content with what one has and not tempted by the possession of others. Greed stops us from welcoming challenges and gifts with courage and wisdom. Greed shrouds our minds and blocks us from seeing the actual value of things. It is wrong to be tempted by the possession of others and seek it. We must work hard to earn what we want and be satisfied with what we have.
+
+        
+        </h2>
+      </div>
+      <h5>to click the next image.</h5>
+      <form action="/side1.html">
+        <input type="submit" value="next page"  style="padding-top:1%;padding-bottom:1%;">
+      </form>
+      <p id="img"></p>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myImg").src;
+          document.getElementById("img").innerHTML = x;
+        }
+      </script>
+    </div>
+
+    <audio id="myAudio" controls>
+      <source src="better-day-186374.mp3" type="audio/ogg">
+      <source src="better-day-186374.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <p id="gg"></p>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myAudio").paused;
+        document.getElementById("gg").innerHTML = x;
+      }
+    </script>
+
+
+    <p id="demo"></p>
+
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello World";
+      }
+    </script>
+</body>
+
+</html>
